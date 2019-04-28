@@ -42,7 +42,7 @@ body {
 
 #featured .image {
     position: absolute;
-    height: 480px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -87,8 +87,8 @@ body {
 #thumbs li a img {
     display: block;
     font-size: 0px;
-    width: 125px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #999999;
 }
 

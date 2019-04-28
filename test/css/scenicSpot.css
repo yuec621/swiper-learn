@@ -26,14 +26,20 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 480px;
+    height: 550px;
    
 }
 
 .slide-wrap img {
     object-fit: contain;
-    width: 1900px;
-    height: 480px;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 1680px) {
+   .slide-wrap{
+       height: 360px;
+      }
+   
 }
 
 .introdution {
@@ -53,18 +59,24 @@ li {
     font-size: 12px;
     text-shadow: 0 0 10px #000000;
 }
-.mask{
-    display: block;
+.swiper-pagination{
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 40px;
+    margin-bottom: -10px;
+}
+/* .mask{
+  
     width: 100%;
     height: 30px;
     left: 0;
     bottom: 0;
     padding: 10px 20px;
     line-height: 22px;
-
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.45);
    
-}
+   
+} */
 @media (min-width: 500px) {
     .introdution {
 
