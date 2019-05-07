@@ -1,0 +1,1033 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+.main{
+	min-width: 1440px;
+	height: 100%;
+	margin: 0 auto;
+	background: #f8f6f7;
+}
+/* 头部 */
+.top{
+	width: 100%;
+	height: 104px;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo{
+	width: 236px;
+	height: 50px;
+	margin: 26px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.logo-img{
+	width: 236px;
+	height: 50px;
+}
+.search{
+	width: 160px;
+	height: 30px;
+	margin: 38px 10px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	color: #333333;
+	border: 1px solid #d4d4d4;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+}
+.search-input{
+	border-radius: 15px;
+	border: 0;
+	padding-left: 30px;
+	padding-right: 10px;
+	width: 120px;
+	height: 30px;
+	outline: none;
+	background-color: #FFFFFF;
+	background: url(../img/icon-search.png) no-repeat 4px 4px;
+	background-size:22px 22px ;	
+}
+.nav{
+	height: 104px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0; 
+}
+.nav-a{
+	display: inline-block;
+	width: 100px;
+	height: 104px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #505050;
+	font-size: 20px;
+	line-height: 104px;
+	text-decoration: none;	
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.nav-a:hover{
+	font-weight: 600;
+	color: #245974;
+	border-bottom: 4px solid #0084ce;
+	background:linear-gradient(to bottom, #ffffff, #d6d6d6);
+	box-sizing: border-box;
+}
+.nav-a:last-child{width: 140px;}
+.nav-a:before{
+	position: absolute;
+	width: 1px;
+	height: 50px;
+	top: 25px;
+	bottom: 25px;
+	right: 0;
+	content: '';
+	border-right: 1px solid transparent;
+	border-image: linear-gradient(to bottom, #f8f6f7,#333333,#f8f6f7);
+	border-image-slice: 2;
+}
+.nav-a:last-child:before{
+	border-right: 0;
+}
+.nav-a-active{
+	font-weight: 600;
+	color: #245974;
+	border-bottom: 4px solid #0084ce;
+	background:linear-gradient(to bottom, #ffffff, #d6d6d6);
+	box-sizing: border-box;
+}
+
+/* 广告轮播 */
+.ad{
+	width: 100%;
+	height: 640px;
+	position: relative;
+}
+.ad-img{
+	width: 100%;
+	height: 640px;
+}
+.ad .swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.ad .swiper-pagination{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	bottom: 0;
+}
+.swiper-pagination .ad-bullet{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icon-bullet.png) no-repeat;
+	background-size: 16px 16px;
+	margin: 10px;
+	outline: none;
+}
+.swiper-pagination .ad-bullet-active{
+	margin: 10px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icon-bullet-active.png) no-repeat;
+	background-size: 16px 16px;
+}
+/* 旅游视频和最新资讯 */
+.part1{
+	width: 1320px;
+	height: 895px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding-top: 55px;
+	padding-bottom: 65px;
+	display: flex;
+}
+/* 旅游视频 */
+.tourVideo{
+	width: 872px;
+	height: 100%;
+}
+.tourVideo-title{
+	width: 100%;
+	height: 52px;
+}
+.title-img1{
+	width: 293px;
+	height: 52px;
+	vertical-align: top;
+}
+.tourVideo-content{
+	width: 100%;
+	height: 548px;
+	margin-top: 25px;
+}
+.tourVideo-video{
+	width: 872px;
+	height: 548px;
+}
+.tourVideo-show{
+	width: 100%;
+	height: 132px;
+	margin-top: 12px;
+	display: flex;
+}
+/* .tourVideo-show-main{
+	width: calc(100% - 34px);
+	height: 132px;
+	display: flex;
+} */
+.tourVideo-show-item{
+	width: 198px;
+	height: 132px;
+	position: relative;
+	margin-right: 11px;
+}
+.tourVideo-show-pic{
+	width: 198px;
+	height: 132px;
+}
+.tourVideo-show-img{
+	width: 198px;
+	height: 132px;
+}
+.tourVideo-show-text{
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	font-size: 12px;
+	color: #FFFFFF;
+	height: 24px;
+	width: 198px;
+	line-height: 24px;	
+	background: rgba(0,0,0,0.8);	
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.tourVideo-show-item-active .tourVideo-show-play{
+	display: none;
+}
+.tourVideo-show-play{
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	height: 132px;
+	width: 198px;
+	background: rgba(0,0,0,0.4);
+	text-align: center;
+	margin: 0 auto;
+}
+.tourVideo-show-playIcon{
+	width: 36px;
+	height: 36px;
+	margin-top: 48px;
+}
+.tourVideo-show-right{
+	width: 34px;
+	height: 132px;
+	text-align: center;
+	background: rgba(0,0,0,0.7);
+}
+.tourVideo-show-icon{
+	width: 13px;
+	height: 28px;
+	margin-top: 52px;
+}
+.tourVideo-show .swiper-button-next{
+	background-image: url(../img/icon-right-w.png);
+	background-size: 13px 28px;
+}
+.tourVideo-show .swiper-button-next{
+	width: 34px;
+	height: 132px;
+	text-align: center;
+	background-color: #4a494a;
+	margin-top: 0;
+	top: 0;
+	right: 0;
+}
+
+/* 最新资讯 */
+.tourNews{
+	width: 438px;
+	height: 100%;
+	margin-left: 30px;
+}
+.tourNews-title{
+	width: 100%;
+	height: 52px;
+}
+.tourNews-news{
+	width: 100%;
+	height: 692px;
+	margin-top: 25px;
+	background: #fff;
+	box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2);
+}
+.tourNews-top{
+	display: flex;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	font-size: 18px;
+	color: #666;
+}
+.tourNews-left{
+	text-align: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding-left: 15px;
+}
+.icon-img{
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	margin-top: -3px;
+	padding-left: 5px;
+}
+.tourNews-right{
+	text-align: right;
+	width: 50%;
+	box-sizing: border-box;
+	padding-right: 15px;
+}
+.tourNews-content{
+	width: 100%;
+	height: auto;
+}
+.tourNews-list{
+	width: 100%;
+	height: 114px;
+	margin: 5px 0;
+	display: flex;
+}
+.tourNews-list:hover{
+	background: #deeef8;
+}
+.tourNews-list-left{
+	width: 140px;
+	height: 90px;
+	margin: 12px;
+}
+.news-img{
+	width: 140px;
+	height: 90px;
+}
+.tourNews-main{
+	width: 240px;
+	height: 90px;
+	margin: 15px 0;
+}
+.tourNews-main-title{
+	width: 100%;
+	line-height:1.5;
+	height: 22px;
+	font-size: 14px;
+	font-weight: bold;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;	
+}
+.tourNews-main-context{
+	font-size: 12px;
+	color: #010101;
+	line-height: 1.5;
+	height: 54px;
+	word-break:break-all;
+	display:-webkit-box;
+	-webkit-line-clamp:3;
+	line-clamp:3;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
+}
+
+/* 景点景区 */
+.part2{
+	width: 100%;
+	height: 772px;	
+	background: url(../img/bg1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.tourPlace{
+	width: 1320px;
+	height: 652px;
+	padding-top: 85px;
+	padding-bottom: 35px;
+	margin: 0 auto;
+}
+.title-img2{
+	width: 446px;
+	height: 52px;
+	vertical-align: top;
+}
+.more{
+	width: 100%;
+	height: auto;
+	text-align: right;
+	font-size: 18px;
+	color: #666;
+	margin-top: -10px;
+}
+.more-a{
+	color: #666;
+	text-decoration: none;
+}
+.tourPlace-content{
+	width: 100%;
+	height: 590px;
+	display: flex;
+}
+/* .tourPlace-left{
+	width: 50px;
+	height: 512px;
+	margin-top: 218px;
+	margin-right: 10px;
+}
+.tourPlace-right{
+	width: 50px;
+	height: 512px;
+	margin-top: 218px;
+	margin-left: 10px;
+}
+.tourPlace-img{
+	width: 50px;
+	height: 75px;
+	vertical-align: middle;
+}
+.tourPlace-middle{
+	width: 1200px;
+	height: 512px;
+	display: flex;
+} */
+.tourPlace-item{
+	width: 346px;
+	height: 512px;
+	background: url(../img/place-bg1.png) no-repeat 0 0;
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+.tourPlace-item:hover{
+	background: url(../img/place-bg2.png) no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.tourPlace-item:nth-child(2){
+	margin: 0 81px;
+}
+.tourPlace-item-active{
+	background: url(../img/place-bg2.png) no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.tourPlace-item-title{
+	padding-top: 82px;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+.tourPlace-item-pic{
+	width: 272px;
+	height: 182px;
+	margin: 37px;
+}
+.tourPlace-item-img{
+	width: 272px;
+	height: 182px;
+	vertical-align: top;
+}
+.tourPlace-item-context{
+	width: 272px;
+	height: auto;
+	margin: 37px;
+	margin-bottom: 0;
+	color: #505050;
+	font-size: 14px;
+	max-height: 80px;
+}
+.tourPlace-content .swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.tourPlace-content .swiper-pagination{
+	width: 100%;
+	bottom: 20px;
+}
+.swiper-pagination .place-bullet{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icon-bulletp.png) no-repeat;
+	background-size: 16px 16px;
+	margin: 10px;
+	outline: none;
+}
+.swiper-pagination .place-bullet-active{
+	margin: 10px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icon-bulletp-active.png) no-repeat;
+	background-size: 16px 16px;
+}
+.tourPlace-content .swiper-button-next{
+	background-image: url(../img/icon-right.png);
+}
+.tourPlace-content .swiper-button-prev{
+	background-image: url(../img/icon-left.png);
+}
+.tourPlace-content .swiper-button-next, .tourPlace-content .swiper-button-prev{
+	top: 42%;
+}
+
+/* 美食特产 */
+.part3{
+	width: 100%;
+	height: 1180px;
+	background: url(../img/bg2.png);
+	background-size: 100% 100%;
+}
+.tourFood{
+	width: 1320px;
+	height: 832px;
+	padding-top: 70px;
+	padding-bottom: 178px;
+	margin: 0 auto;
+}
+.tourFood-content{
+	width: 1320px;
+	height: 832px;
+	margin-top: 30px;
+	position: relative;
+}
+.tourFood-item{
+	position: absolute;
+}
+.tourFood-item:first-child{
+	width: 328px;
+	height: 354px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.tourFood-item:nth-child(2){
+	width: 328px;
+	height: 478px;
+	position: absolute;
+	top: 354px;
+	left: 0;
+}
+.tourFood-item:nth-child(3){
+	width: 332px;
+	height: 462px;
+	position: absolute;
+	bottom: 0;
+	left: 328px;
+}
+.tourFood-item:nth-child(4){
+	width: 660px;
+	height: 526px;
+	position: absolute;
+	top: 0;
+	left: 660px;
+}
+.tourFood-item:nth-child(5){
+	width: 330px;
+	height: 308px;
+	position: absolute;
+	bottom: 0;
+	left: 660px;
+}
+.tourFood-item:nth-child(6){
+	width: 330px;
+	height: 308px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.tourFood-item-pic{
+	width: 100%;
+	height: 100%;
+}
+.tourFood-item-img{
+	width: 100%;
+	height: 100%;
+}
+.tourFood-item-name{
+	height: 56px;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 30px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	text-align: right;
+}
+.tourFood-item-s{
+	border: 1px solid #FFFFFF;
+	padding: 10px;
+}
+
+
+/* 度假酒店/乡村旅游/旅游攻略 */
+.part4{
+	width: 1320px;
+	margin: 0 auto;
+	height: 930px;
+	display: flex;
+}
+.part4-left{
+	width: 917px;
+	height: 760px;
+	padding-top: 40px;
+	padding-bottom: 130px;
+}
+/* 度假酒店 */
+.tourHotel{
+	width: 100%;
+	height: 396px;
+}
+.tourHotel-title{
+	width: 100%;
+	height: 52px;
+}
+.tourHotel-content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	margin-top:20px ;	
+}
+/* .tourHotel-main{
+	width: 870px;
+	height: 306px;
+	display: flex;
+} */
+.tourHotel-item{
+	width: 266px;
+	height: 306px;
+	background: #FFFFFF;
+	margin-right: 24px;
+}
+.tourHotel-item-pic{
+	width: 266px;
+	height: 200px;
+}
+.tourHotel-item-img{
+	width: 266px;
+	height: 200px;
+}
+.tourHotel-item-context{	
+	width: 246px;
+	height: 65px;
+	border-bottom: 1px solid #010101;
+	text-align: left;
+	margin: 0 10px;
+}
+.tourHotel-item-title{
+	margin-top: 10px;
+	font-size: 20px;
+	color: #000000;
+	line-height: 20px;
+}
+.tourHotel-item-main{
+	font-size: 14px;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	color: #505050;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.tourHotel-item-more{
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0 10px;
+	color: #505050;
+}
+.tourHotel-item-a{
+	color: #505050;
+	text-decoration: none;
+}
+/* .tourHotel-right{
+	width: 47px;
+	height: 306px;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+}
+.tourHotel-right-img{
+	width: 21px;
+	height: 38px;
+	vertical-align: middle;
+	margin-top: 134px;
+} */
+.tourHotel-content .swiper-button-next{
+	background-image: url(../img/icon-right-w.png);
+	background-size: 21px 38px;
+}
+.tourHotel-content .swiper-button-next{
+	width: 46px;
+	height: 306px;
+	text-align: center;
+	background-color: #4a494a;
+	margin-top: 0;
+	top: 0;
+	right: 0;
+}
+
+/* 乡村旅游 */
+.tourVillage{
+	width: 100%;
+	height: 306px;
+	margin-top: 58px;
+}
+.tourVillage-content{
+	width: 100%;
+	height: 218px;
+	margin-top: 20px;
+}
+.tourVillage-list{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+	width: 448px;
+	height: 218px;
+	position: relative;
+}
+.tourVillage-list:first-child{
+	margin-right: 15px;
+}
+.village-pic{
+	width: 448px;
+	height: 218px;	
+}
+.tourVillage-main{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 448px;
+	height: 218px;
+	background: rgba(0,0,0,0.2);
+}
+.tourVillage-t1{
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 15px;
+	font-size: 28px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.tourVillage-t2{
+	width: 100%;	
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+}
+/* 旅游攻略 */
+.tourGuide{
+	width: 356px;
+	height: 760px;
+	padding-top: 40px;
+	padding-bottom: 130px;
+	margin-left: 47px;
+}
+.tourGuide-content{
+	width: 100%;
+	height: 100px;
+}
+.tourGuide-list{
+	width: 100%;
+	height: 126px;
+	border-radius: 10px;
+	position: relative;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.guide-img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.tourGuide-main{
+	width: 100%;
+	height: 126px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.5);
+}
+.tourGuide-t1{
+	color: #FFFFFF;
+	text-align: center;
+	width: 100%;
+	font-size: 36px;
+	margin-top: 25px;
+}
+.tourGuide-t2{
+	color: #FFFFFF;
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+	margin-top: 5px;
+	line-height: 1.3;
+}
+.tourGuide-t2:last-child{
+	margin-top: 0;
+}
+.tourGuide-t3{
+	color: #FFFFFF;
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.tourGuide-t3:first-child{
+	margin-top: 30px;
+
+}
+
+/* 优惠预订 */
+.part5{
+	width: 100%;
+	height: 530px;
+	background: url(../img/bg3.png);
+	background-size: 100% 100%;
+}
+.tourDiscount{
+	width: 1320px;
+	height: 280px;
+	padding: 125px 0;
+	margin: 0 auto;
+	display: flex;
+}
+.tourDiscount-text{
+	width: 390px;
+	height: 280px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.tourDiscount-t1{
+	width: 100%;
+	height: 120px;
+	line-height: 100px;
+	font-size: 90px;
+	color: #FFFFFF;
+	text-align: justify;
+}
+.tourDiscount-t2{
+	width: 100%;
+	height: 40px;
+	line-height: 30px;
+	font-size: 26px;
+	color: #FFFFFF;
+	text-align: justify;
+}
+.tourDiscount-t3{
+	width: 100%;
+	height: 70px;
+	line-height: 50px;
+	font-size: 38px;
+	color: #FFFFFF;
+	text-align: justify;
+}
+.tourDiscount-btn{
+	width: 160px;
+	height: 50px;
+	color: #333333;
+	font-size: 25px;
+	background: #FFFFFF;
+}
+
+.tourDiscount-pic{
+	width: 930px;
+	height: 280px;
+	background: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	border-width: 0;
+}
+.tourDiscount-content{
+	width: 100%;
+	height: 100%;
+	padding: 45px 66px;
+	box-sizing: border-box;
+	display: flex;
+}
+/* .tourDiscount-main{
+	width: 760px;
+	height: 190px;
+	display: flex;
+} */
+.tourDiscount-item{
+	width: 226px;
+	height: 190px;
+	background: #FFFFFF;
+	margin-right: 27px;
+}
+.tourDiscount-item-pic{
+	width: 226px;
+	height: 120px;
+}
+.tourDiscount-item-img{
+	width: 226px;
+	height: 120px;
+}
+.tourDiscount-price{
+	width: 206px;
+	height: 25px;
+	padding: 0 10px;
+	font-size: 14px;
+	color: #f67572;
+	line-height: 25px;
+}
+.tourDiscount-price-s{
+	font-size: 12px;
+	padding-left: 5px;
+}
+.tourDiscount-context{
+	width: 206px;
+	height: 45px;
+	padding: 0 10px;
+	font-size: 12px;
+	color: #505050;
+	word-break:break-all;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
+}
+/* .tourDiscount-right{
+	width: 30px;
+	height: 190px;
+	text-align: center;
+	background: rgba(0,0,0,0.7);
+}
+.tourDiscount-right-img{
+	width: 16px;
+	height: 22px;
+	margin-top: 84px;
+} */
+.tourDiscount-content .swiper-button-next{
+	background-image: url(../img/icon-right-w.png);
+	background-size: 16px 22px;
+}
+.tourDiscount-content .swiper-button-next{
+	width: 30px;
+	height: 190px;
+	text-align: center;
+	background-color: #4a494a;
+	margin-top: 0;
+	top: 0;
+	right: 0;
+}
+
+/* 底部 */
+.foot{
+	width: 100%;
+	height: 250px;
+}
+/* 友情链接 */
+.foot-link{
+	width: 100%;
+	height: 60px;
+	background: #686868;
+	margin:0 auto;
+	line-height: 60px;
+	text-align: center;
+}
+.foot-t{
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "microsoft yahei";
+	color: #c2c2c2;
+	padding-right: 10px;
+}
+.foot-link-a{
+	font-size: 12px;
+	font-family: "microsoft yahei";
+	color: #c2c2c2;
+	padding-right: 10px;
+	text-decoration: none;
+}
+.foot-message{
+	width: 100%;
+	height: 190px;
+	background: #3c3c3c;
+	text-align: center;
+}
+.foot-content{
+	width: 1100px;
+	height: 100px;
+	padding: 45px 0;
+	display: flex;
+	margin: 0 auto;
+}
+.foot-logo{
+	width: 295px;
+	height: 50px;
+	margin: 25px 0;
+}
+.foot-logo-img{
+	width: 295px;
+	height: 50px;
+	vertical-align: middle;
+}
+.foot-detail{
+	color: #ddd;
+	font-size: 12px;
+	width: 400px;
+	margin: 25px 60px;
+	margin-right: 0;
+	text-align: left;
+	line-height: 1.6;
+}
+.foot-detail-a{
+	color: #ddd;
+	text-decoration: none;
+	display: inline-block;
+	width: 60px;
+	border-right: 1px solid #FFFFFF;
+	margin-right: 15px;
+}
+.foot-detail-a:last-child{
+	border-right: 0;
+}
+.foot-ewm{
+	width: 345px;
+	height: 100px;
+	text-align: right;
+}
+.foot-ewm-main{
+	width: 95px;
+	height: 110px;
+	margin-left: 50px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+}
+.foot-ewm-pic{
+	width: 95px;
+	height: 95px;
+}
+.ewm-img{
+	width: 95px;
+	height: 95px;
+	vertical-align: top;
+}
+.foot-ewm-t{
+	width: 95px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #ddd;
+	font-size: 12px;
+}
